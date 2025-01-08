@@ -1,4 +1,5 @@
 export default function HomePage() {
-    return
-    <p>Hello World!</p>
+    return (
+        <div><p>Hello World!</p></div>
+    )
 }
