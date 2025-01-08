@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { MapPin, Star, Twitch, Music, Video, Book, Code, Coffee, Gamepad } from 'lucide-react'
 import Image from "next/image"
 
-export default function ProfilePage() {
+export default function AysArtLinksPage() {
   return (
     <div className="min-h-screen bg-background p-4 md:p-8">
       <div className="mx-auto max-w-4xl space-y-6">
