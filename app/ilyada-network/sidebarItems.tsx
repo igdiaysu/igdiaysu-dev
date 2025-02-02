@@ -1,6 +1,5 @@
 "use client"
 import {
-  Home,
   Swords,
   Shovel
 } from "lucide-react"

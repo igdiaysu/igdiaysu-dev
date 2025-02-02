@@ -29,12 +29,12 @@ export function AppSidebar({ items }: { items: Items }) {
       </SidebarHeader>
       <SidebarContent>
         {/* We create a SidebarGroup for each parent. */}
-        {items.navMain.map((item: any) => (
+        {items.navMain.map((item) => (
           <SidebarGroup key={item.title}>
             <SidebarGroupLabel>{item.title}</SidebarGroupLabel>
             <SidebarGroupContent>
               <SidebarMenu>
-                {item.items?.map((subItems: any) => (
+                {item.items?.map((subItems) => (
                   <SidebarMenuItem key={subItems.title}>
                     <SidebarMenuButton asChild isActive={subItems.isActive}>
                       <a href={subItems.url}>
