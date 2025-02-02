@@ -14,6 +14,11 @@ Dinamik sayfalarda --> "use client" kullan! Yükü browser alıyor.
 // export X --> import { X } from ""
 // export default X --> import X as Y from "" 
 
+## vercel öncesi hataları görme
+```bash
+npm run build
+```
+
 ## Props
 
 ```tsx

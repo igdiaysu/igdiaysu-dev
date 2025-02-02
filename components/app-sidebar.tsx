@@ -15,7 +15,7 @@ import {
   SidebarMenuItem,
   SidebarRail,
 } from "@/components/ui/sidebar"
-import { Items } from "@/app/ilyada-network/sidebarItems"
+import { Items } from "@/components/app-sidebar-types"
 
 export function AppSidebar({ items }: { items: Items }) {
   return (

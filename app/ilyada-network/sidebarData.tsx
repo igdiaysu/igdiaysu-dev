@@ -1,4 +1,5 @@
 "use client"
+import { Items } from "@/components/app-sidebar-types";
 import {
   Swords,
   Shovel
@@ -9,22 +10,6 @@ import {
 export const sideTitle = [
   "İlyada Network"
 ];
-
-export type NavItem = {
-  title: string;
-  icon?: React.ComponentType;
-  items?: Array<{
-    title: string;
-    url: string;
-    icon?: React.ComponentType;
-    isActive?: boolean;
-  }>;
-}
-
-export type Items = {
-  versions: string[];
-  navMain: NavItem[];
-}
 
 export const items: Items = {
   versions: ["1.0.1", "1.1.0-alpha", "2.0.0-beta1"],

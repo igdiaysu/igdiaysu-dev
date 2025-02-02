@@ -1,7 +1,6 @@
 "use client"
 
 import { AppSidebar } from "@/components/app-sidebar"
-import { items } from "./sidebarItems"
 
 // import {
 //   SidebarProvider,
@@ -15,6 +14,7 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar"
+import { items } from "./sidebarData";
 
 
 export default function RootLayout({
