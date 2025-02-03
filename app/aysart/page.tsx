@@ -1,19 +1,13 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
-import { MapPin, Star, Twitch, Music, Video, Book, Code, Coffee, Gamepad, ChevronRight } from 'lucide-react'
+import { MapPin, Star, Twitch, Music, Video, Book, Code, Coffee, Gamepad } from 'lucide-react'
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
-
 
 export default function AysArtLinksPage() {
   return (
     <div className="min-h-screen bg-background p-4 md:p-8">
       <div className="mx-auto max-w-4xl space-y-6">
-        <Button asChild variant={"link"} className="justify-start">
-          <Link href={"/"}> <ChevronRight /> Home </Link>
-        </Button>
         {/* Profile Header */}
         <div className="flex flex-col items-center space-y-4 text-center">
           <Avatar className="h-32 w-32">
@@ -205,5 +199,5 @@ export default function AysArtLinksPage() {
   )
 }
 
-
+import { Button } from "@/components/ui/button"
 
