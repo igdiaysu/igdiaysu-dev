@@ -17,28 +17,26 @@ import {
 import { items } from "./sidebarData";
 
 
-export default function RootLayout({
+export default function IlyadaLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <body>
-      <SidebarProvider>
-        <AppSidebar items={items} />
-        <SidebarInset>
-          <header className="flex h-16 shrink-0 items-center gap-2 border-b px-4">
-            <SidebarTrigger className="-ml-1" />
-          </header>
-          <div className="flex flex-1 flex-col gap-4 p-4">
-            {children}
-          </div>
-        </SidebarInset>
-      </SidebarProvider>
+    <SidebarProvider>
+      <AppSidebar items={items} />
+      <SidebarInset>
+        <header className="flex h-16 shrink-0 items-center gap-2 border-b px-4">
+          <SidebarTrigger className="-ml-1" />
+          {/* benim sayfaya yönlendirmeler --> buton olabilir belki sağa yaslı şekilde */}
+        </header>
+        <main className="flex flex-1 flex-col gap-4 p-4">
+          {children}
+        </main>
+      </SidebarInset>
+    </SidebarProvider>
 
 
-
-    </body>
     // <SidebarProvider>
     //   <AppSidebar items={sidebarItems} sideTitle={sideTitle} />
     //   <main>

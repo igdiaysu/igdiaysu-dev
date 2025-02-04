@@ -2,7 +2,11 @@
 import { Items } from "@/components/app-sidebar-types";
 import {
   Swords,
-  Shovel
+  Shovel,
+  Sprout,
+  BookOpen,
+  LaptopMinimal,
+  BookMarked
 } from "lucide-react"
 
 
@@ -18,60 +22,57 @@ export const items: Items = {
       title: "İlyada Network",
       items: [
         {
-          title: "PVP",
+          title: "Hakkında",
+          url: "#",
+          icon: BookOpen,
+          isActive: true,
+        },
+        {
+          title: "Server Kuralları",
+          url: "/ilyada-network/kurallar",
+          icon: BookMarked,
+        },
+        {
+          title: "Discord",
+          url: "/ilyada-network/discord",
+          icon: LaptopMinimal,
+        },
+      ],
+    },
+    {
+      title: "Oyun Modu",
+      items: [
+        {
+          title: "PVP & PVP",
+          url: "/ilyada-network/oyun-modu",
+          icon: BookOpen,
+        },
+        {
+          title: "PVE Detayları",
+          url: "/ilyada-network/pve",
+          icon: Sprout,
+        },
+        {
+          title: "PVP Detayları",
           url: "/ilyada-network/pvp",
           icon: Swords,
         },
+      ],
+    },
+    {
+      title: "Claim - Arazi Sahiplenme",
+      items: [
         {
-          title: "Claiming",
-          url: "ilyada-network/claiming",
+          title: "Claim Hakkında",
+          url: "/ilyada-network/claim-hakkinda",
+          icon: BookOpen,
+        },
+        {
+          title: "Claim Alma",
+          url: "/ilyada-network/claim-alma",
           icon: Shovel,
         },
       ],
-    },
-    {
-      title: "Getting Started",
-      items: [
-        {
-          title: "Installation",
-          url: "#",
-        },
-        {
-          title: "Project Structure",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Building Your Application",
-      items: [
-        {
-          title: "Routing",
-          url: "#",
-        },
-        {
-          title: "Data Fetching",
-          url: "#",
-          isActive: true,
-        },
-      ],
-    },
-    {
-      title: "API Reference",
-      items: [
-        {
-          title: "Components",
-          url: "#",
-        },
-        {
-          title: "File Conventions",
-          url: "#",
-        },
-
-      ],
-    },
-    {
-      title: "Architecture",
     },
   ],
 }

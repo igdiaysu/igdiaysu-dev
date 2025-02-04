@@ -1,22 +1,48 @@
-import { Button } from "@/components/ui/button";
-import { ChevronRight } from "lucide-react";
-import Link from "next/link";
+import { Heading1Icon, Heading2Icon, Heading3Icon } from "lucide-react";
 
-export default function Page() {
+
+export default function IlyadaPage() {
   return (
-    <div>
-      <Button asChild variant={"link"} className="justify-start">
-        <Link href={"/"}> <ChevronRight /> Home </Link>
-      </Button>
+    // <div>Hello</div>
+    <div className="max-w-screen-lg space-y-8">
+      <div className="space-y-1">
+        <h1 className="text-2xl font-medium tracking-tight"><Heading1Icon /></h1>
+        {/* <p className="text-base text-muted-foreground">
+          Manage your servers and channels from your dashboard.
+        </p> */}
+        <p className="text-sm text-muted-foreground">
+          Manage your servers and channels from your dashboard.
+        </p>
+      </div>
+      <div className="space-y-4">
+        <h2 className="text-xl font-medium tracking-tight"><Heading2Icon /></h2>
+        <p>
+          Manage your servers and channels from your dashboard.<br />
+          h1 - text 2xl , font medium, tracking tight<br />
+          h2 - text xl, font medium, tracking tight
+        </p>
+        <div className="space y-4">
+          <h3 className="text-xl font-medium tracking-tight"><Heading3Icon /></h3>
+          <p>
 
-      <div className="flex flex-1 flex-col gap-4 p-4">
-        <div className="grid auto-rows-min gap-4 md:grid-cols-3">
-          <div className="aspect-video rounded-xl bg-muted/50" />
-          <div className="aspect-video rounded-xl bg-muted/50" />
-          <div className="aspect-video rounded-xl bg-muted/50" />
+          </p>
         </div>
-        <div className="min-h-[100vh] flex-1 rounded-xl bg-muted/50 md:min-h-min" />
       </div>
     </div>
+
+    // <div className="max-w-screen-lg space-y-8">
+    //   <div className="space-y-1">
+    //     <h1 className="text-2xl font-medium tracking-tight">Dashboard</h1>
+    //     <p className="text-sm text-muted-foreground">
+    //       Manage your servers and channels from your dashboard.
+    //     </p>
+    //   </div>
+    //   <div className="space-y-4">
+    //     <h1 className="font-medium tracking-tight">My Servers & Channels</h1>
+    //     content
+    //   </div>
+    // </div>
+
+
   )
 }
