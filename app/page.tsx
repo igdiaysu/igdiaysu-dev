@@ -4,29 +4,34 @@ import { ChevronRight } from "lucide-react";
 
 export default function HomePage() {
   return (
-    <div>
-      <p>Hello World!</p>
+    <div className="flex justify-center h-screen w-full">
 
-      <Button asChild variant={"default"}>
+      <div className="flex flex-col justify-center gap-3">
+        <p className="text-center">Hello World!</p>
+
+        <Button asChild variant={"outline"} className="justify-start">
+          <Link href={"/aysart"}> <ChevronRight /> AysArt </Link>
+        </Button>
+
+        <Button asChild variant={"outline"} className="justify-start">
+          <Link href={"/ilyada-network"}> <ChevronRight />İlyada Network</Link>
+        </Button>
+
+        {/* <Button asChild variant={"ghost"}>
         <Link href={"/aysart"}> <ChevronRight /> AysArt - for streams</Link>
-      </Button>
-      <Button asChild variant={"destructive"}>
+        </Button>
+        <Button asChild variant={"link"}>
         <Link href={"/aysart"}> <ChevronRight /> AysArt - for streams</Link>
-      </Button>
-      <Button asChild variant={"ghost"}>
+        </Button>
+        <Button asChild variant={"outline"}>
         <Link href={"/aysart"}> <ChevronRight /> AysArt - for streams</Link>
-      </Button>
-      <Button asChild variant={"link"}>
+        </Button>
+        <Button asChild variant={"secondary"}>
         <Link href={"/aysart"}> <ChevronRight /> AysArt - for streams</Link>
-      </Button>
-      <Button asChild variant={"outline"}>
-        <Link href={"/aysart"}> <ChevronRight /> AysArt - for streams</Link>
-      </Button>
-      <Button asChild variant={"secondary"}>
-        <Link href={"/aysart"}> <ChevronRight /> AysArt - for streams</Link>
-      </Button>
+        </Button> */}
 
 
+      </div>
     </div>
   );
 }
